@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block header %}
+New game
+{% endblock %}
+
+{% block content %}
+ID:<input name="id"><br>
+Password:<input name="pw"><br>
+White<input type="radio" name="color" value="white" checked="checked">
+Black<input type="radio" name="color" value="black">
+<br>
+<input type="submit">
+{% endblock %}

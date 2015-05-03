@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block header %}
+Chess
+{% endblock %}
+
+{% block content %}
+<a href="/new.html">Start a new game</a>
+Available games: 
+<ul>
+{% for game in games %}
+	<li><a href="/game/{{ game }}">{{ game }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
